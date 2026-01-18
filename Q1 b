@@ -1,0 +1,45 @@
+import pickle
+
+def create_employee_file():
+
+employees = [
+
+{"Empno": 101, "Empname": "ABC", "Designation": "Manager", "Salary": 75000},
+
+["Empno": 102, "Empname": "BCD", "Designation": "Developer", "Salary": 55000},
+
+{Empno": 103, "Empname": "CDE", "Designation": "Analyst", "Salary": 450003,]
+
+
+
+with open ("Employee dat", "wb") as file:
+
+for emp in employees:
+
+pickle.dump(emp, file)
+
+print("Employee.dat file created successfully!")
+
+def display_employee_file():
+
+try:
+
+with open("Employee.dat", "rb") as file:
+
+print("\nContents of Employee.dat:")
+
+while True:
+
+try:
+
+emp = pickle.load(file)
+
+print(emp)
+
+except EOFError:
+
+break
+
+except FileNotFoundError:
+
+print("Employee.dat file not found. Please create it first.")
