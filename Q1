@@ -1,0 +1,27 @@
+Employee = {1001: ['Sundar', 50000], 1002 : ['senthil',
+25000 , 1003: l'Anu'
+, 26000], 1004: ['Snelra',
+35000], 1005 : ['Amar, 40000], 1006: ['Akbar.
+75000 ], 1007 : L'Antony', 60000 ]}
+Estack = [ ]
+def Puch (Employee , Estack) :
+for emp-id, details in Employee. items () :
+if details [1] < 50000 :
+Estack.append ([emp_id, details [O], details(111)
+def Pop(Estack) :
+While Estack :
+print (Estack -pop ())
+print ("Stack is underfloro")
+def Display (Estack ) :
+if Estack : 
+for item in Estack: 
+print (item)
+eise :
+print ("Stack is empty")
+Push ( Employee, Estack)
+print ("stack after Push :")
+Display (Estack)
+pint ('\npop operation: ")
+Pop (Estack)
+print ("\nstack after Pop :")
+Display (Estack)
